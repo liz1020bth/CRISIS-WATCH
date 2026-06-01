@@ -1,0 +1,3352 @@
+/* Estilos para la Portada de Bienvenida */
+.pantalla-portada {
+  width: 100%;
+  height: 100vh;
+  /* Reemplaza 'la-paz-noche.jpg' con la ruta real de tu imagen de fondo */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('la-paz-noche.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Clases de control para ocultar y desvanecer */
+.oculto {
+  display: none !important;
+}
+
+.desvanecer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animación elegante para que el menú y el sistema aparezcan */
+.seccion-sistema {
+  width: 100%;
+  min-height: 100vh;
+  animation: entradaSuave 0.6s ease-out forwards;
+}
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos sugeridos para tu botón */
+.boton-explorar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-explorar:hover {
+  background-color: #0056b3;
+}
+/* ==========================================
+   RESET TOTAL (Elimina líneas blancas del borde)
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #0d1117; /* Fondo oscuro continuo */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Controladores de transición */
+.oculto {
+  display: none !important;
+}
+
+.desvanecer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ==========================================
+   1. PORTADA CON DISEÑO DE ALTA CALIDAD
+   ========================================== */
+.pantalla-portada {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contenido-portada {
+  max-width: 850px;
+}
+
+/* Letras mejoradas y nítidas */
+.subtitulo {
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #58a6ff;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(88, 166, 255, 0.3);
+}
+
+.titulo-principal {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+.lema {
+  font-size: 1.3rem;
+  color: #c9d1d9;
+  margin-bottom: 45px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Botón estilizado */
+.boton-explorar {
+  background: linear-gradient(135deg, #1f6feb, #0969da);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 45px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(31, 111, 235, 0.4);
+  transition: all 0.3s ease;
+}
+
+.boton-explorar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(31, 111, 235, 0.6);
+  background: linear-gradient(135deg, #2378ff, #0c75f0);
+}
+
+/* ==========================================
+   2. CONTENIDO INTERNO Y MENÚ
+   ========================================== */
+.seccion-sistema {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d1117;
+  padding: 40px;
+  animation: entradaSuave 0.6s ease-out forwards;
+}
+
+@keyframes entradaSuave {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-navegacion {
+  background: rgba(22, 27, 34, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  border-radius: 20px;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo-nav h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #58a6ff;
+}
+
+.logo-nav span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8b949e;
+  text-transform: uppercase;
+  display: block;
+}
+
+.enlaces-menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.enlaces-menu a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.enlaces-menu a:hover {
+  color: #ffffff;
+  background: rgba(240, 246, 252, 0.1);
+}
+
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .titulo-principal { font-size: 2.8rem; }
+  .menu-navegacion { flex-direction: column; gap: 15px; text-align: center; }
+  .enlaces-menu { flex-wrap: wrap; justify-content: center; }
+}
+.pantalla-portada {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  
+  /* Aquí agregas el enlace del GIF de la ciudad */
+  background: linear-gradient(rgba(13, 17, 23, 0.55), rgba(13, 17, 23, 0.85)), 
+              url('https://share.google/26rfFnvZJVRgyrMFT') no-repeat center center/cover;
+              
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ==========================================
+   NUEVA PALETA PARA EL MENÚ (LA PAZ)
+   ========================================== */
+
+/* La barra ahora es un cristal oscuro que deja ver el fondo de la ciudad */
+.menu-navegacion {
+  background: rgba(15, 21, 39, 0.75); /* Azul noche translúcido */
+  backdrop-filter: blur(12px); /* Efecto esmerilado profesional */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil */
+  border-radius: 20px;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* El texto "LA PAZ" con un degradado cian/azul eléctrico nítido */
+.logo-nav h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* El subtítulo "OH MI LINDA LA PAZ" en un gris plata limpio */
+.logo-nav span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #94a3b8; 
+  text-transform: uppercase;
+  display: block;
+}
+
+/* Los enlaces de las pestañas (Inicio, Contexto, etc.) */
+.enlaces-menu a {
+  color: #cbd5e1; /* Gris claro que resalta sin saturar */
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+/* Cuando pasas el mouse por encima de una pestaña */
+.enlaces-menu a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/*nuevo 
+/* ==========================================
+   ESTILOS DE INICIO - SURISIM BOLIVIA
+   ========================================== */
+.seccion-inicio {
+  background-color: #070913;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px 40px 60px 40px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Navbar de la Captura */
+.navbar-interna {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icono-analisis {
+  background-color: rgba(230, 57, 70, 0.1);
+  color: #e63946;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(230, 57, 70, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.logo-area h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.marca-pais {
+  color: #e63946;
+}
+
+.menu-interno {
+  display: flex;
+  gap: 25px;
+}
+
+.enlace-nav {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.enlace-nav:hover, .enlace-nav.activo {
+  color: #ffffff;
+}
+
+.etiqueta-monitoreo {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+  border: 1px solid rgba(243, 156, 18, 0.3);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.punto-parpadeo {
+  width: 7px;
+  height: 7px;
+  background-color: #f39c12;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Grid de Distribución Asimétrica */
+.grid-inicio {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Columna Izquierda */
+.badge-subtitulo {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.titulo-principal-sim {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+.descripcion-general {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Caja de Alerta de Crisis */
+.caja-alerta-crisis {
+  background: linear-gradient(135deg, rgba(230, 57, 70, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  border: 1px solid rgba(230, 57, 70, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.icono-alerta {
+  color: #e63946;
+  margin-top: 2px;
+}
+
+.contenido-alerta h4 {
+  color: #e63946;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.contenido-alerta p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Columna Derecha (Tarjeta de Objetivos) */
+.tarjeta-objetivos {
+  background-color: #0e1326;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.encabezado-objetivos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icono-oro {
+  color: #f39c12;
+}
+
+.encabezado-objetivos h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.texto-meta {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Pasos Internos */
+.lista-pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-paso {
+  display: flex;
+  gap: 15px;
+}
+
+.numero-paso {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(243, 156, 18, 0.15);
+}
+
+.detalles-paso h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.detalles-paso p {
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Ajustes de Media Queries (Responsividad) */
+@media (max-width: 1024px) {
+  .grid-inicio {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .titulo-principal-sim {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-interna {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .menu-interno {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .seccion-inicio {
+    padding: 15px;
+  }
+}
+/* ==========================================
+   ESTILOS DE LA SECCIÓN CONTEXTO (image_6a9b89.png)
+   ========================================== */
+.seccion-contexto {
+  background-color: #070913;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.encabezado-contexto {
+  margin-bottom: 35px;
+}
+
+.subtitulo-rojo {
+  color: #e63946;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.titulo-contexto {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.descripcion-contexto {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Distribución de las 3 Tarjetas Superiores */
+.grid-tarjetas-contexto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.tarjeta-transmision {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.meta-afecta {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Títulos y contenido interno de las tarjetas */
+.tarjeta-transmision h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.tarjeta-transmision p {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Notas resaltadas inferiores */
+.nota-alerta-amarilla {
+  font-size: 0.85rem;
+  color: #f39c12;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+  margin-top: auto;
+}
+
+.nota-alerta-amarilla.cursiva {
+  font-style: italic;
+}
+
+.punto-amarillo {
+  width: 6px;
+  height: 6px;
+  background-color: #f39c12;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   CONTENEDOR DE FACTORES INFERIORES
+   ========================================== */
+.contenedor-factores-horizontales {
+  background-color: #070913;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item-factor-horizontal {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.texto-factor h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4facfe; /* Azul Cambiario */
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.texto-factor h4.verde-brillante {
+  color: #2ecc71; /* Hecho en Bolivia */
+}
+
+.texto-factor p {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   ESTILOS DE ICONOS VARIADOS (Fondos opacos sutiles)
+   ========================================== */
+.icono-mini-contexto {
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-grande-redondo {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Variaciones cromáticas opacas */
+.rojo-dim { background-color: rgba(230, 57, 70, 0.1); border: 1px solid rgba(230, 57, 70, 0.15); }
+.azul-dim { background-color: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.15); }
+.oro-dim  { background-color: rgba(243, 156, 18, 0.1); border: 1px solid rgba(243, 156, 18, 0.15); }
+.verde-dim { background-color: rgba(46, 204, 113, 0.1); border: 1px solid rgba(46, 204, 113, 0.15); }
+
+/* ==========================================
+   RESPONSIVIDAD PARA TABLETAS Y MÓVILES
+   ========================================== */
+@media (max-width: 1024px) {
+  .grid-tarjetas-contexto {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* ==========================================
+   RESET DE MÁRGENES PARA DISEÑO COMPLETAMENTE LLENO (FULL-SCREEN)
+   ========================================== */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #070913; /* Mismo fondo base para evitar parpadeos blancos */
+  overflow-x: hidden; /* Evita cualquier desbordamiento horizontal */
+}
+
+/* ==========================================
+   CORRECCIÓN DEL CONTENEDOR DE LA SECCIÓN INTERNA
+   ========================================== */
+.seccion-sistema {
+  width: 100% !important;
+  min-height: 100vh;
+  margin: 0 !important;       /* Eliminamos cualquier margen que cause el recuadro negro */
+  padding: 20px 40px 60px 40px; /* Solo espacio interno para respirar */
+  background-color: #070913;
+  box-sizing: border-box;       /* Evita que el padding sume tamaño extra al 100% */
+}
+/* caso de estudio 
+/* ==========================================
+   SECCIÓN: CASOS DE ESTUDIO (image_6a8976.png)
+   ========================================== */
+.seccion-casos {
+  background-color: #070913;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.encabezado-casos {
+  margin-bottom: 35px;
+}
+
+.subtitulo-rojo-caps {
+  color: #e63946;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.titulo-casos {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.descripcion-casos {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Contenedor Grid para los 4 Perfiles */
+.grid-perfiles-crisis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tarjeta de Perfil Estándar */
+.tarjeta-perfil {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tarjeta Activa (Tormenta Perfecta) */
+.tarjeta-perfil.perfil-activo {
+  border: 1px solid #e63946;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.15);
+}
+
+/* Punto indicador rojo de la esquina */
+.punto-notificacion-rojo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 6px;
+  height: 6px;
+  background-color: #e63946;
+  border-radius: 50%;
+}
+
+.encabezado-perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  min-height: 40px;
+}
+
+.encabezado-perfil h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.3px;
+}
+
+.detalles-contexto-perfil {
+  color: #7f8fa4;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.separador-sutil {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Lista Interna de Datos Alineados */
+.lista-datos-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.fila-dato {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.fila-dato span {
+  color: #64748b;
+}
+
+.fila-dato strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Botones Inferiores */
+.btn-simular-scenario {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  transition: all 0.2s ease;
+}
+
+.btn-simular-scenario:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* Botón de Estado Activo Carga */
+.btn-escenario-cargado {
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .grid-perfiles-crisis {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-perfiles-crisis {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================================
+   ESTILOS GENERALES DEL DASHBOARD (image_609fd5.png)
+   ========================================== */
+.seccion-simulador {
+  background-color: #070913;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.encabezado-simulador { margin-bottom: 35px; }
+.titulo-simulador { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+.descripcion-simulador { color: #94a3b8; font-size: 1rem; max-width: 900px; line-height: 1.5; }
+
+/* Grid Principal de 2 Columnas */
+.grid-dashboard {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* PANEL IZQUIERDO CONTROLES */
+.panel-controles {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.encabezado-panel {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.encabezado-panel h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.encabezado-panel p { color: #64748b; font-size: 0.85rem; line-height: 1.4; padding-right: 25px; }
+
+.icono-calculadora {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(230, 57, 70, 0.1);
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+}
+
+/* Sliders y Etiquetas */
+.grupo-control {
+  margin-bottom: 24px;
+}
+
+.label-control-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.label-control-wrapper label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.icon-label-inline { margin-right: 4px; font-size: 1rem; }
+
+/* Badges de Valores Dinámicos */
+.badge-valor {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.badge-orange { color: #f39c12; background: rgba(243, 156, 18, 0.1); }
+.badge-orange-solid { color: #ffffff; background: #e67e22; }
+.badge-lightblue { color: #00f2fe; background: rgba(0, 242, 254, 0.1); }
+.badge-red { color: #ff3333; background: rgba(230, 57, 70, 0.15); }
+.badge-green { color: #2ecc71; background: rgba(46, 204, 113, 0.1); }
+.badge-purple { color: #9b59b6; background: rgba(155, 89, 182, 0.15); }
+
+/* Personalización nativa de los deslizadores (inputs range) */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #1e293b;
+  outline: none;
+  margin-bottom: 6px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+.slider-orange::-webkit-slider-thumb { background: #f39c12; }
+.slider-lightblue::-webkit-slider-thumb { background: #00f2fe; }
+.slider-red::-webkit-slider-thumb { background: #ff3333; }
+.slider-green::-webkit-slider-thumb { background: #2ecc71; }
+.slider-purple::-webkit-slider-thumb { background: #9b59b6; }
+
+.limites-slider {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+/* Botón de Ejecución Principal */
+.btn-ejecutar {
+  background-color: #ff3333;
+  color: #ffffff;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  transition: background 0.2s ease;
+}
+
+.btn-ejecutar:hover { background-color: #e62222; }
+.btn-ejecutar span { font-weight: 400; margin-left: auto; opacity: 0.7; }
+
+/* PANEL DERECHO DE RESULTADOS */
+.panel-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Grid de Mini Tarjetas */
+.grid-tarjetas-impacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.tarjeta-impacto-mini {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-tarjeta-impacto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.valor-impacto { font-size: 1.45rem; font-weight: 800; margin-bottom: 8px; color: #ffffff; }
+.valor-impacto-green { font-size: 1.45rem; font-weight: 800; margin-bottom: 8px; color: #2ecc71; }
+.valor-impacto-red { font-size: 1.45rem; font-weight: 800; margin-bottom: 8px; color: #ff3333; }
+
+.sub-texto-impacto { font-size: 0.8rem; color: #475569; margin-bottom: 12px; }
+
+.badge-estado-rojo {
+  background-color: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.2);
+  color: #ff3333;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Barras de Relleno Internas */
+.barra-progreso-bg { height: 5px; background-color: #1e293b; border-radius: 3px; overflow: hidden; margin-top: auto; }
+.bar-fill { height: 100%; border-radius: 3px; }
+.bar-fill.red { background-color: #ff3333; }
+.bar-fill.green { background-color: #2ecc71; }
+
+.linea-decorativa-roja { height: 3px; background-color: #ff3333; width: 100%; border-radius: 2px; margin-top: auto; }
+
+.link-mercado {
+  color: #00f2fe;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+/* Caja de Diagnóstico */
+.caja-diagnostico-consumo {
+  background-color: rgba(230, 57, 70, 0.03);
+  border: 1px solid rgba(230, 57, 70, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icono-fuego { font-size: 1.2rem; }
+.texto-diagnostico h5 { font-size: 0.88rem; font-weight: 700; color: #ff9f43; margin-bottom: 4px; }
+.texto-diagnostico p { color: #94a3b8; font-size: 0.88rem; line-height: 1.5; }
+
+/* Contenedor del Gráfico de Canvas */
+.contenedor-grafico-temporal {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.encabezado-grafico {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.titulos-graficos-left h5 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.titulos-graficos-left p { color: #64748b; font-size: 0.82rem; }
+
+.switch-botones-grafico {
+  background-color: #070913;
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-switch {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-switch.activo { background-color: #1e293b; color: #ffffff; }
+
+.wrapper-canvas-grafico { width: 100%; display: flex; justify-content: center; margin: 15px 0; }
+.pie-grafico { text-align: center; color: #475569; font-size: 0.82rem; font-style: italic; }
+
+/* Caja Informativa Inferior */
+.tip-simulacion-caja {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  align-items: center;
+}
+
+.highlight-red { color: #ff3333; font-weight: 700; }
+
+/* Responsividad del Dashboard */
+@media (max-width: 1100px) {
+  .grid-dashboard { grid-template-columns: 1fr; }
+  .grid-tarjetas-impacto { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* CONCLUCIONES 
+/* ==========================================
+   ESTILOS: CONCLUSIONES Y CUESTIONARIO (image_6090b4.png)
+   ========================================== */
+.seccion-conclusiones {
+  background-color: #070913;
+  color: #ffffff;
+  padding: 60px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.encabezado-seccion { margin-bottom: 40px; }
+.titulo-conclusiones { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+.descripcion-conclusiones { color: #94a3b8; font-size: 1rem; max-width: 850px; line-height: 1.5; }
+
+/* Grid de Distribución */
+.grid-conclusiones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* COLUMNA IZQUIERDA: PANELES TEÓRICOS */
+.panel-aprendizajes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tarjeta-teorica {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.encabezado-tarjeta-teorica {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.icono-bombilla { font-size: 1.2rem; color: #ff9f43; }
+.tarjeta-teorica h3 { font-size: 1.1rem; font-weight: 700; color: #ffffff; letter-spacing: 0.5px; }
+.parrafo-teorico { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px; }
+
+.puntos-utilidad {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 20px;
+}
+
+.punto-utilidad-item p { font-size: 0.9rem; line-height: 1.5; color: #cbd5e1; }
+.resaltado-verde { color: #2ecc71; font-weight: 700; }
+
+/* Tarjeta Declaratoria */
+.tarjeta-declaratoria {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #ff9f43;
+  border-radius: 4px 14px 14px 4px;
+  padding: 25px;
+}
+
+.encabezado-declaratoria {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.icono-libro { font-size: 1rem; color: #ff9f43; }
+.tarjeta-declaratoria h4 { font-size: 0.9rem; font-weight: 700; color: #ffffff; }
+.texto-declaratoria-quote { font-size: 0.9rem; font-style: italic; color: #94a3b8; line-height: 1.6; margin: 0; }
+
+/* COLUMNA DERECHA: EVALUACIÓN / CUESTIONARIO */
+.panel-evaluacion {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.encabezado-evaluacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.titulo-evaluacion-wrapper { display: flex; align-items: center; gap: 12px; }
+.icono-cerebro { font-size: 1.2rem; color: #00f2fe; }
+.panel-evaluacion h3 { font-size: 1.05rem; font-weight: 700; color: #ffffff; }
+
+.badge-autonomo {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: rgba(0, 242, 254, 0.1);
+  color: #00f2fe;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+/* Bloques de Preguntas */
+.bloque-pregunta {
+  margin-bottom: 30px;
+}
+
+.enunciado-pregunta {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Estilo de Opciones de Respuesta */
+.opcion-respuesta {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #070913;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.opcion-respuesta:hover {
+  background-color: #12182d;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Ocultar el botón radio nativo pero mantener accesibilidad */
+.opcion-respuesta input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Letra de Opción (A, B, C) */
+.letra-opcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.texto-opcion {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  transition: color 0.15s ease;
+}
+
+/* Estado de Opción Seleccionada (Antes de Calificar) */
+.opcion-respuesta input[type="radio"]:checked + .letra-opcion {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.opcion-respuesta input[type="radio"]:checked ~ .texto-opcion {
+  color: #ffffff;
+}
+
+/* ESTADOS DE RETROALIMENTACIÓN DINÁMICA (JS) */
+.opcion-correcta-marcada {
+  background-color: rgba(46, 204, 113, 0.08) !important;
+  border-color: rgba(46, 204, 113, 0.3) !important;
+}
+.opcion-correcta-marcada .letra-opcion { background-color: #2ecc71 !important; color: #ffffff !important; }
+.opcion-correcta-marcada .texto-opcion { color: #ffffff !important; }
+
+.opcion-incorrecta-marcada {
+  background-color: rgba(230, 57, 70, 0.08) !important;
+  border-color: rgba(230, 57, 70, 0.3) !important;
+}
+.opcion-incorrecta-marcada .letra-opcion { background-color: #ff3333 !important; color: #ffffff !important; }
+.opcion-incorrecta-marcada .texto-opcion { color: #ffffff !important; }
+
+.feedback-pregunta {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 6px;
+  padding-left: 40px;
+}
+.feedback-pregunta.val-ok { color: #2ecc71; }
+.feedback-pregunta.val-error { color: #ff3333; }
+
+/* Pie de Formulario */
+.pie-formulario-evaluacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 20px;
+  margin-top: 15px;
+}
+
+.texto-ayuda-pie { font-size: 0.82rem; color: #475569; }
+
+.btn-calificar {
+  background-color: #1a1f36;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-calificar:hover {
+  background-color: #222947;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsividad */
+@media (max-width: 950px) {
+  .grid-conclusiones { grid-template-columns: 1fr; }
+}
+/* ==========================================
+   ESTILOS DE PIE DE PÁGINA Y CRÉDITOS (image_608ff6.png)
+   ========================================== */
+.pie-simulador {
+  background-color: #070913;
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Distribución del bloque de autoría e info */
+.grid-footer-superior {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+/* Columna de Información */
+.info-proyecto-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.titulo-info-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icono-graduacion { font-size: 1.1rem; color: #ff3333; }
+.info-proyecto-footer h3 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.5px; }
+.descripcion-proyecto-footer { color: #64748b; font-size: 0.9rem; line-height: 1.6; max-width: 420px; }
+.hecho-con-amor { color: #475569; font-size: 0.85rem; margin-top: 5px; }
+
+/* Panel de Créditos Estudiantiles */
+.panel-creditos-autoria {
+  background-color: rgba(12, 17, 34, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.header-creditos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-creditos h3 { font-size: 0.88rem; font-weight: 700; letter-spacing: 0.5px; color: #cbd5e1; }
+
+.badge-destacado {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 77, 77, 0.15);
+}
+
+/* Contenedor del Estudiante */
+.caja-estudiante-desarrollador {
+  background-color: #070913;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tag-rol-estudiante { font-size: 0.72rem; font-weight: 700; color: #ff4d4d; letter-spacing: 0.5px; display: block; margin-bottom: 4px; }
+.caja-estudiante-desarrollador h4 { font-size: 1.1rem; font-weight: 700; color: #ffffff; }
+.facultad-texto { font-size: 0.82rem; color: #64748b; margin-top: 2px; }
+
+.boton-contacto-mail {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.boton-contacto-mail:hover { background-color: rgba(255, 255, 255, 0.06); }
+.boton-contacto-mail svg { transition: stroke 0.15s ease; }
+.boton-contacto-mail:hover svg { stroke: #ffffff; }
+
+/* Sub-grid de Asignatura y Área */
+.grid-detalles-asignatura {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.bloque-detalle-meta {
+  background-color: rgba(7, 9, 19, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.label-meta-footer { font-size: 0.68rem; font-weight: 700; color: #475569; letter-spacing: 0.5px; display: block; margin-bottom: 4px; }
+.valor-meta-footer { font-size: 0.85rem; font-weight: 600; color: #cbd5e1; }
+
+/* Separadores y Derechos */
+.linea-divisoria-footer { border: 0; height: 1px; background-color: rgba(255, 255, 255, 0.03); margin-bottom: 30px; }
+
+.barra-derechos-footer {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.texto-copyright { font-size: 0.85rem; color: #475569; margin-bottom: 6px; }
+.texto-evaluacion-institucional { font-size: 0.82rem; color: #334155; }
+
+/* Fila de Marcas Inferior */
+.barra-sub-footer-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  padding-top: 20px;
+}
+
+.sub-footer-left { display: flex; align-items: center; gap: 8px; color: #94a3b8; }
+.alerta-circulo-rojo { color: #ff3333; font-size: 0.9rem; }
+.muted-text { color: #475569; }
+
+.sub-footer-right { font-size: 0.75rem; color: #334155; letter-spacing: 0.5px; font-weight: 600; }
+
+/* Adaptación móvil */
+@media (max-width: 850px) {
+  .grid-footer-superior { grid-template-columns: 1fr; gap: 30px; }
+  .grid-detalles-asignatura { grid-template-columns: 1fr; }
+  .barra-sub-footer-logos { flex-direction: column; gap: 15px; text-align: center; }
+}
+/* INICIO DE LOS SIMULADORES*/
+/* ===== CONTENEDOR GENERAL ===== */
+
+.layout-escenarios-mixto{
+    width:100%;
+    max-width:1400px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    /* TEXTO A LA IZQUIERDA Y TARJETAS A LA DERECHA */
+    grid-template-columns: 1.2fr 1fr;
+
+    gap:40px;
+
+    padding:0 30px;
+
+    box-sizing:border-box;
+}
+
+/* ===== TEXTO IZQUIERDA ===== */
+
+.info-escenarios{
+    width:100%;
+}
+
+/* ===== CONTENEDOR TARJETAS ===== */
+
+.contenedor-tarjetas{
+    display:grid;
+
+    /* 3 ARRIBA Y 3 ABAJO */
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    align-items:start;
+}
+
+/* ===== TARJETAS ===== */
+
+.tarjeta-escenario{
+    background:#071224;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:22px;
+
+    padding:22px;
+
+    min-height:280px;
+
+    color:white;
+
+    transition:0.3s;
+
+    overflow:hidden;
+}
+
+.tarjeta-escenario:hover{
+    transform:translateY(-5px);
+}
+
+/* ===== TITULOS ===== */
+
+.tarjeta-escenario h3{
+    font-size:1.2rem;
+
+    line-height:1.4;
+
+    margin-bottom:15px;
+
+    color:white;
+}
+
+/* ===== TEXTO ===== */
+
+.tarjeta-escenario p{
+    color:#94a3b8;
+
+    line-height:1.7;
+
+    font-size:0.95rem;
+}
+
+/* ===== IMAGENES ===== */
+
+.tarjeta-escenario img{
+    width:100%;
+
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1100px){
+
+    .layout-escenarios-mixto{
+        grid-template-columns:1fr;
+    }
+
+    .contenedor-tarjetas{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .contenedor-tarjetas{
+        grid-template-columns:1fr;
+    }
+}
+
+/* IMPORTANTE */
+
+html,body{
+    overflow-x:hidden;
+}
+/* =========================
+   SECCION GENERAL
+========================= */
+
+.seccion-modulo-seis{
+    width:100%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    padding:80px 40px;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+}
+
+/* LINEA */
+.linea-separadora-suri{
+    width:100%;
+    height:1px;
+
+    background:rgba(255,255,255,0.08);
+
+    margin-bottom:50px;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.titulo-modulo-suri{
+    margin-bottom:50px;
+}
+
+.sub-tag-suri{
+    color:#cbd5e1;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    display:block;
+
+    margin-bottom:15px;
+}
+
+.titulo-degradado-suri{
+    font-size:55px;
+
+    line-height:1.1;
+
+    color:white;
+
+    margin-bottom:20px;
+}
+
+.descripcion-modulo-suri{
+    color:#94a3b8;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    max-width:850px;
+}
+
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+
+.contenedor-columnas-suri{
+    display:grid;
+
+    grid-template-columns:1.5fr 420px;
+
+    gap:40px;
+
+    align-items:start;
+}
+
+/* =========================
+   GRID TARJETAS
+========================= */
+
+.bloque-tarjetas-suri{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjeta-individual-suri{
+    background:#071224;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    min-height:320px;
+
+    transition:0.3s;
+
+    overflow:hidden;
+}
+
+.tarjeta-individual-suri:hover{
+    transform:translateY(-6px);
+}
+
+/* HEADER TARJETA */
+
+.header-tarjeta-suri{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+}
+
+/* LETRAS */
+
+.badge-letra-suri{
+    width:42px;
+    height:42px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    color:white;
+
+    flex-shrink:0;
+}
+
+/* COLORES */
+
+.color-suri-a{background:#0ea5e9;}
+.color-suri-b{background:#10b981;}
+.color-suri-c{background:#f59e0b;}
+.color-suri-d{background:#8b5cf6;}
+.color-suri-e{background:#ef4444;}
+.color-suri-f{background:#06b6d4;}
+
+/* TITULOS */
+
+.tarjeta-individual-suri h3{
+    color:white;
+
+    font-size:1.3rem;
+
+    line-height:1.4;
+}
+
+/* TEXTO */
+
+.tarjeta-individual-suri p{
+    color:#94a3b8;
+
+    line-height:1.8;
+
+    font-size:0.95rem;
+}
+
+/* =========================
+   IMAGEN DERECHA
+========================= */
+
+.bloque-imagen-suri{
+    width:100%;
+}
+
+.marco-foto-suri{
+    position:sticky;
+
+    top:120px;
+
+    background:#071224;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+/* IMAGEN */
+
+.foto-suri-render{
+    width:100%;
+
+    height:700px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+/* SOMBRA */
+
+.sombra-interna-suri{
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(2,6,23,0.95),
+        rgba(2,6,23,0.1)
+    );
+}
+
+/* TEXTO SOBRE IMAGEN */
+
+.texto-flotante-suri{
+    position:absolute;
+
+    bottom:30px;
+
+    left:30px;
+
+    right:30px;
+
+    z-index:5;
+}
+
+.texto-flotante-suri h4{
+    color:white;
+
+    font-size:1.6rem;
+
+    margin-bottom:10px;
+}
+
+.texto-flotante-suri p{
+    color:#cbd5e1;
+
+    line-height:1.7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+    .bloque-tarjetas-suri{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contenedor-columnas-suri{
+        grid-template-columns:1fr;
+    }
+
+    .foto-suri-render{
+        height:500px;
+    }
+}
+
+@media(max-width:700px){
+
+    .bloque-tarjetas-suri{
+        grid-template-columns:1fr;
+    }
+
+    .titulo-degradado-suri{
+        font-size:38px;
+    }
+
+    .seccion-modulo-seis{
+        padding:60px 20px;
+    }
+}
+
+/* IMPORTANTE */
+
+html,body{
+    overflow-x:hidden;
+}
+/* CONTENEDOR GENERAL */
+
+.contenedor-columnas-suri{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    width:100%;
+}
+
+/* BLOQUE IZQUIERDO */
+
+.bloque-tarjetas-suri{
+    width:70%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+/* IMAGEN DERECHA */
+
+.bloque-imagen-suri{
+    width:30%;
+
+    position:sticky;
+
+    top:100px;
+}
+.tarjeta-individual-suri{
+    background:#071224;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    min-height:320px;
+
+    border:1px solid rgba(255,255,255,0.08);
+}
+@media(max-width:1200px){
+
+    .bloque-tarjetas-suri{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .contenedor-columnas-suri{
+        flex-direction:column;
+    }
+
+    .bloque-tarjetas-suri{
+        width:100%;
+
+        grid-template-columns:1fr;
+    }
+
+    .bloque-imagen-suri{
+        width:100%;
+    }
+}
+/* ==========================================
+   CLASE CONTENEDORA (EL ESCUDO SALVAVIDAS)
+   ========================================== */
+.contenedor {
+  width: 90%;            /* Ocupa el 90% de la pantalla en dispositivos chicos */
+  max-width: 1200px;     /* En monitores grandes, no se estira más allá de 1200px */
+  margin: 0 auto;        /* Centra el bloque horizontalmente en la pantalla */
+  padding: 0 20px;       /* Colchón de seguridad interno en los costados */
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   MÁRGENES DE LAS SECCIONES generales
+   ========================================== */
+.seccion-premium {
+  background-color: #070913;
+  /* El primer número es espacio arriba/abajo, el segundo es a los lados */
+  padding: 60px 0; 
+  box-sizing: border-box;
+}
+
+/* Asegúrate de que tu contenedor de las 3 tarjetas use Flexbox o Grid con espacio */
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;             /* Separa las tarjetas entre sí */
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Ajuste responsivo básico para que no se arruine en celulares */
+@media (max-width: 992px) {
+  .grid-tarjetas {
+    grid-template-columns: 1fr; /* Se vuelven una sola columna en pantallas chicas */
+  }
+}
+/* ==========================================
+   CSS DE ALINEACIÓN Y MAQUETACIÓN GLOBAL
+   ========================================== */
+
+/* 1. Fuerza el ancho máximo idéntico al del inicio */
+.contenedor-fijo {
+  width: 100%;
+  max-width: 1200px;      /* Centrado simétrico idéntico a tu cabecera */
+  margin: 0 auto;         /* Centra el bloque en pantallas grandes */
+  padding: 0 24px;        /* Evita que toque los bordes del navegador */
+  box-sizing: border-box;
+}
+
+/* 2. Espaciado e higiene de la sección */
+.seccion-bloque-oscuro {
+  background-color: #070913;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+/* Textos principales alineados */
+.subtitulo-rojo-global {
+  color: #e63946;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.titulo-seccion-global {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+
+.descripcion-seccion-global {
+  font-size: 1rem;
+  color: #94a3b8;
+  max-width: 800px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* 3. Grid de las 3 Tarjetas */
+.grid-tres-columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;              /* Separación interna uniforme */
+  margin-bottom: 45px;
+}
+
+.tarjeta-premium-costo {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header-tarjeta-premium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tag-afecta {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.icono-tarjeta-premium {
+  font-size: 1.1rem;
+}
+
+.tarjeta-premium-costo h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.tarjeta-premium-costo p {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  flex-grow: 1; /* Hace que todos los textos se alineen abajo equitativamente */
+}
+
+.alerta-amarilla-tarjeta {
+  font-size: 0.8rem;
+  color: #ff9f43;
+  line-height: 1.4;
+}
+
+/* 4. Lista de Detalles Inferior */
+.contenedor-lista-detalles {
+  background-color: rgba(12, 17, 34, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.item-detalle-linea {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icono-circular-detalle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.color-rojo { background-color: rgba(230, 57, 70, 0.1); }
+.color-azul { background-color: rgba(0, 242, 254, 0.1); }
+.color-verde { background-color: rgba(46, 204, 113, 0.1); }
+
+.texto-detalle-linea h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.3px;
+}
+
+.texto-detalle-linea p {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 5. Protección Responsiva Móvil */
+@media (max-width: 992px) {
+  .grid-tres-columnas {
+    grid-template-columns: 1fr;
+  }
+  .titulo-seccion-global {
+    font-size: 1.8rem;
+  }
+}
+/* ==========================================
+   ESTRUCTURA DE ALINEACIÓN PROFESIONAL (SURISIM)
+   ========================================== */
+
+/* Esta sola clase alineará todo mágicamente al centro sin tocar los bordes */
+.contenedor-plataforma {
+  width: 100%;
+  max-width: 1200px;        /* Ancho máximo exacto para que todo calce en línea */
+  margin: 0 auto;           /* Centra el bloque entero horizontalmente */
+  padding: 0 40px;          /* El "colchón" o aire lateral para que nada se arrincone */
+  box-sizing: border-box;   /* Evita que los paddings rompan el tamaño */
+}
+
+/* Base de limpieza para las secciones oscuras */
+.seccion-ajustada {
+  background-color: #070913;
+  padding: 80px 0;          /* Espaciado generoso arriba y abajo */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- ESTILOS DE LA CADENA DE TRANSMISIÓN --- */
+.subtitulo-alerta {
+  color: #e63946;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.titulo-grande-blanco {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.parrafo-guia-gris {
+  font-size: 0.98rem;
+  color: #94a3b8;
+  max-width: 850px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Cuadrícula de 3 columnas de costos */
+.bloque-grid-tres {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.tarjeta-analisis-costo {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Fila de detalles inferiores (Subvención, Brecha, etc.) */
+.lista-detalles-vertical {
+  background-color: rgba(12, 17, 34, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* --- ESTILOS DE CASOS DE ESTUDIO (CUADROS DE ESCENARIOS) --- */
+.grid-cuatro-escenarios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+/* Responsivo para laptops chicas y tablets */
+@media (max-width: 1100px) {
+  .grid-cuatro-escenarios { grid-template-columns: repeat(2, 1fr); }
+  .bloque-grid-tres { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .grid-cuatro-escenarios { grid-template-columns: 1fr; }
+  .contenedor-plataforma { padding: 0 20px; }
+}
+
+/* ===================================================
+   CONTENEDOR MAESTRO GLOBAL (Para todas las secciones)
+   =================================================== */
+.contenedor-general {
+  width: 100% !important;
+  max-width: 1200px !important; /* Limita el ancho en pantallas grandes para que no se estire al infinito */
+  margin: 0 auto !important;    /* Centra automáticamente todo el bloque de izquierda a derecha */
+  padding: 0 40px !important;   /* El colchón lateral para que NADA toque los bordes del navegador */
+  box-sizing: border-box !important; /* Evita que el padding altere las dimensiones reales */
+}
+
+/* Ajuste general para asegurar que ninguna sección rompa la alineación */
+section {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: block !important;
+}
+/* ===================================================
+   ARQUITECTURA DE CONTENEDORES GLOBAL Y LIMPIA
+   =================================================== */
+
+/* 1. Las secciones solo manejan el fondo y el color de base */
+section {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  clear: both;
+}
+
+/* 2. El CONTENEDOR UNIFICADO: Solo se aplica al DIV interno directo */
+.container {
+  width: 100%;
+  max-width: 1200px;        /* Ancho máximo perfecto para pantallas grandes */
+  margin: 0 auto;           /* Centrado horizontal automático */
+  padding: 0 40px;          /* Espaciado de seguridad para que nada toque los bordes */
+  box-sizing: border-box;
+}
+
+/* 3. Corrección de seguridad para tus elementos internos (Grids y Flexbox) */
+.container * {
+  box-sizing: border-box;
+}
+
+/* Ajuste específico responsivo para pantallas pequeñas o laptops chicas */
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+/* ===================================================
+   REAJUSTE Y ALINEACIÓN GENERAL DEL SITIO (SuriSim)
+   =================================================== */
+
+/* 1. Obligar a todas las secciones principales a tener un colchón lateral uniforme */
+section, footer {
+  width: 100% !important;
+  padding-left: 3% !important;   /* Empuja todo el contenido hacia la derecha para alinearlo */
+  padding-right: 3% !important;  /* Evita que los elementos peguen al borde derecho */
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+/* 2. Controlar que los títulos y textos largos no se estiren de forma desproporcionada */
+section h1, 
+section h2, 
+section .subtitle, 
+section > p {
+  max-width: 1200px !important; /* Limita el estiramiento a la misma medida de tus paneles */
+  margin-left: 0 !important;     /* Mantiene la alineación izquierda natural */
+  margin-right: auto !important;
+}
+
+/* 3. Asegurar que las cuadrículas internas mantengan su ancho nativo sin aplastarse */
+.grid-cards, 
+.dashboard-container, 
+.simulador-layout,
+.conclusiones-container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto 0 0 !important; /* Alineado perfectamente con el borde izquierdo de los títulos */
+}
+
+/* 6 CASOS DE ESTUDIO */
+/* ===================================================
+   ESTILOS ESPECÍFICOS PARA LOS 6 CASOS DE ESTUDIO
+   =================================================== */
+
+/* Rejilla de 3 columnas para pantallas grandes (2 filas de 3) */
+.grid-casos-seis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tarjeta base idéntica a tus cuadros */
+.tarjeta-caso-estudio {
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.encabezado-caso {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.icono-caso {
+  font-size: 1.2rem;
+}
+
+.tarjeta-caso-estudio h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.descripcion-caso {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  min-height: 45px; /* Mantiene la simetría de las tarjetas */
+}
+
+/* Estructura interna de datos (Izquierda texto, Derecha negrita) */
+.tabla-datos-caso {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding-bottom: 15px;
+}
+
+.fila-dato {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.fila-dato span {
+  color: #64748b;
+}
+
+.fila-dato strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Caja especial para el "Resultado Esperado" de la rúbrica */
+.resultado-esperado-box {
+  background-color: rgba(7, 9, 19, 0.4);
+  border-left: 3px solid #64748b;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.resultado-esperado-box h5 {
+  margin: 0 0 4px 0;
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.resultado-esperado-box p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+/* Botones idénticos a los tuyos */
+.btn-simular-caso {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.btn-simular-caso:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* Adaptabilidad para pantallas de laptops más pequeñas o tablets */
+@media (max-width: 1100px) {
+  .grid-casos-seis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-casos-seis {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================================
+   ESTILOS COMPONENTE INTERACTIVO SIMULADORES
+   ========================================== */
+.laboratorio-simuladores-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #0c1122;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.simuladores-header h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.simuladores-header p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+/* Sistema de Pestañas Nav */
+.simuladores-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 12px;
+}
+
+.sim-tab-btn {
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.sim-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.sim-tab-btn.active {
+  background: #e63946;
+  color: #ffffff;
+  border-color: #e63946;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.2);
+}
+
+/* Control de Visualización de Paneles */
+.sim-panel-individual {
+  display: none;
+}
+
+.sim-panel-individual.active {
+  display: block;
+  animation: fadeInSim 0.35s ease;
+}
+
+@keyframes fadeInSim {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Distribución Interna */
+.sim-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+@media (max-width: 768px) {
+  .sim-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Entradas de Datos */
+.sim-card-inputs h4 {
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  font-size: 1.1rem;
+  border-left: 3px solid #e63946;
+  padding-left: 8px;
+}
+
+.sim-group {
+  margin-bottom: 14px;
+}
+
+.sim-group label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+
+.sim-group input {
+  width: 100%;
+  background: #060913;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.sim-group input:focus {
+  outline: none;
+  border-color: #e63946;
+}
+
+/* Salidas de Datos */
+.sim-card-outputs {
+  background: rgba(255, 255, 255, 0.01);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.sim-card-outputs h5 {
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #38bdf8;
+}
+
+.sim-resultado-render {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* Alertas y Bloques de Resultados */
+.sim-alert-box {
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.sim-alert-box.danger {
+  background: rgba(230, 57, 70, 0.12);
+  border: 1px solid #e63946;
+  color: #f87171;
+}
+
+.sim-alert-box.success {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid #22c55e;
+  color: #4ade80;
+}
+
+.sim-metric-line {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+  padding-bottom: 6px;
+}
+
+.sim-metric-line span {
+  font-weight: 700;
+  color: #ffffff;
+}
+/*ARREGLO GENERAL*/
+/* ============================================================
+   MÓDULO DE SIMULADORES PULIDO - INTEGRACIÓN ALINEADA DE ALTO NIVEL
+   ============================================================ */
+
+.laboratorio-simuladores-container {
+  width: 100%;
+  padding: 0;
+  margin: 48px auto;
+  background: transparent; /* Eliminamos la caja interna gris feo */
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Encabezado en perfecta línea con tus títulos macro */
+.simuladores-header {
+  margin-bottom: 28px;
+}
+
+.simuladores-header h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.simuladores-header p {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Sistema de Pestañas Estilo Dashboard Premium */
+.simuladores-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 14px;
+}
+
+.sim-tab-btn {
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sim-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sim-tab-btn.active {
+  background: #e63946; /* El rojo característico de tu UI */
+  color: #ffffff;
+  border-color: #e63946;
+  box-shadow: 0 4px 14px rgba(230, 57, 70, 0.3);
+}
+
+/* Paneles individuales */
+.sim-panel-individual {
+  display: none;
+}
+
+.sim-panel-individual.active {
+  display: block;
+  animation: simSmoothFade 0.4s ease;
+}
+
+@keyframes simSmoothFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Grid equilibrado idéntico a tu layout de dos columnas */
+.sim-grid-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .sim-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Estilo de Inputs impecable - Sin bordes blancos chillones */
+.sim-card-inputs h4 {
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.sim-group {
+  margin-bottom: 18px;
+}
+
+.sim-group label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sim-group input {
+  width: 100%;
+  background: #090d1a; /* Tono exacto de tus contenedores oscuros */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 11px 14px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.sim-group input:focus {
+  outline: none;
+  border-color: #e63946;
+  background: #0d1326;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+/* Columna Derecha: Tarjeta de Resultados Espejo */
+.sim-card-outputs {
+  background: #0d1325; /* Fondo idéntico a las tarjetas de arriba */
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sim-card-outputs h5 {
+  color: #38bdf8; /* Azul cyan financiero del panel */
+  margin: 0 0 18px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.sim-resultado-render {
+  color: #cbd5e1;
+}
+
+/* Líneas de métricas elegantes con puntos de separación */
+.sim-metric-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+  padding-bottom: 8px;
+  font-size: 0.92rem;
+}
+
+.sim-metric-line span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Cajas de estado / Alertas estilizadas sin romper el diseño */
+.sim-alert-box {
+  padding: 14px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.sim-alert-box.danger {
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.25);
+  color: #f87171;
+}
+
+.sim-alert-box.success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #4ade80;
+}
+/*REVISAR*/
+/* ============================================================
+   MÓDULO DE SIMULADORES CORREGIDO - CONTROL DE LÍNEAS DE MARGEN
+   ============================================================ */
+
+.seccion-simulador-laboratorio {
+  width: 100%;
+  padding: 40px 0; /* Espaciado superior e inferior limpio */
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* El truco de alineación: Emula exactamente el layout de tus créditos */
+.container-dashboard-ajustado {
+  max-width: 1200px; /* Si tu diseño usa otro ancho como 1300px, puedes cambiar este valor aquí */
+  width: 90%;        /* Mantiene el colchón elástico lateral de tu UI */
+  margin: 0 auto;    /* Centrado horizontal perfecto sin desbordarse */
+  box-sizing: border-box;
+}
+
+.simuladores-header {
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.simuladores-header h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.simuladores-header p {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Pestañas Horizontales Limpias */
+.simuladores-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 14px;
+}
+
+.sim-tab-btn {
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sim-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sim-tab-btn.active {
+  background: #e63946;
+  color: #ffffff;
+  border-color: #e63946;
+  box-shadow: 0 4px 14px rgba(230, 57, 70, 0.3);
+}
+
+/* Visibilidad de páneles */
+.sim-panel-individual {
+  display: none;
+}
+
+.sim-panel-individual.active {
+  display: block;
+  animation: simSmoothFade 0.4s ease;
+}
+
+@keyframes simSmoothFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Grid Interno Equilibrado de Entrada y Salida */
+.sim-grid-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .sim-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.sim-card-inputs h4 {
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.sim-group {
+  margin-bottom: 18px;
+}
+
+.sim-group label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sim-group input {
+  width: 100%;
+  background: #0d1325; /* Tono exacto de tus tarjetas oscuras de créditos */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 11px 14px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.sim-group input:focus {
+  outline: none;
+  border-color: #e63946;
+  background: #131a33;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+/* Tarjeta Lateral de Salida */
+.sim-card-outputs {
+  background: #0d1325; 
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sim-card-outputs h5 {
+  color: #38bdf8;
+  margin: 0 0 18px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.sim-metric-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+  padding-bottom: 8px;
+  font-size: 0.92rem;
+  color: #cbd5e1;
+}
+
+.sim-metric-line span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sim-alert-box {
+  padding: 14px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.sim-alert-box.danger {
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.25);
+  color: #f87171;
+}
+
+.sim-alert-box.success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #4ade80;
+}
+/*MARGEN GENERAL*/
+/* ============================================================
+   CONTROLADOR MANUAL DE MÁRGENES Y ANCHOS (MODIFÍCALO A TU GUSTO)
+   ============================================================ */
+
+.container-dashboard-ajustado {
+  /* 1. ANCHO MÁXIMO PERMITIDO: 
+     Si notas que el simulador queda muy estrecho comparado con tu menú de arriba, 
+     sube este valor a 1250px, 1300px o 1400px hasta que se alinee perfectamente. */
+  max-width: 1200px; 
+  
+  /* 2. COLCHÓN ELÁSTICO LATERAL:
+     Es el porcentaje de pantalla que ocupa en monitores medianos o laptops.
+     Puedes jugar entre 85%, 90% o 95%. A mayor porcentaje, más se pega a los bordes. */
+  width: 90%;        
+  
+  /* 3. CENTRADO AUTOMÁTICO HORIZONTAL:
+     El 'auto' a los lados es obligatorio para que no se recueste a la izquierda. */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 4. SEPARACIÓN DE BLOQUES (ARRIBA Y ABAJO):
+     El primer valor (48px) controla la distancia con la sección anterior.
+     El segundo valor (48px) controla la distancia con la sección de abajo.
+     Auméntalo si sientes que el simulador está muy pegado a tus otros componentes. */
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+  /* 5. ESPACIADO INTERNO DE SEGURIDAD:
+     Evita que el contenido toque los bordes del navegador en pantallas chicas. */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   CONTROL DE FILAS INTERNAS (ENTRADAS Y RESULTADOS)
+   ============================================================ */
+.sim-grid-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* Cambia a 1fr 1fr si quieres que midan idéntico */
+  
+  /* ESPACIO DE SEPARACIÓN INTERNA:
+     Controla la distancia intermedia entre la columna de inputs y la de resultados.
+     Si quieres más separación entre ellas, sube este valor a 40px o 48px. */
+  gap: 42px; 
+  
+  align-items: start;
+}
+/*amrgen*/
+/* ============================================================
+   CONTROLADOR MANUAL DE MÁRGENES Y ANCHOS (MODIFÍCALO A TU GUSTO)
+   ============================================================ */
+
+.container-dashboard-ajustado {
+  /* 1. ANCHO MÁXIMO PERMITIDO: 
+     Si notas que el simulador queda muy estrecho comparado con tu menú de arriba, 
+     sube este valor a 1250px, 1300px o 1400px hasta que se alinee perfectamente. */
+  max-width: 1200px; 
+  
+  /* 2. COLCHÓN ELÁSTICO LATERAL:
+     Es el porcentaje de pantalla que ocupa en monitores medianos o laptops.
+     Puedes jugar entre 85%, 90% o 95%. A mayor porcentaje, más se pega a los bordes. */
+  width: 90%;        
+  
+  /* 3. CENTRADO AUTOMÁTICO HORIZONTAL:
+     El 'auto' a los lados es obligatorio para que no se recueste a la izquierda. */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 4. SEPARACIÓN DE BLOQUES (ARRIBA Y ABAJO):
+     El primer valor (48px) controla la distancia con la sección anterior.
+     El segundo valor (48px) controla la distancia con la sección de abajo.
+     Auméntalo si sientes que el simulador está muy pegado a tus otros componentes. */
+  margin-top: 48px;
+  margin-bottom: 40px;
+
+  /* 5. ESPACIADO INTERNO DE SEGURIDAD:
+     Evita que el contenido toque los bordes del navegador en pantallas chicas. */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   CONTROL DE FILAS INTERNAS (ENTRADAS Y RESULTADOS)
+   ============================================================ */
+.sim-grid-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* Cambia a 1fr 1fr si quieres que midan idéntico */
+  
+  /* ESPACIO DE SEPARACIÓN INTERNA:
+     Controla la distancia intermedia entre la columna de inputs y la de resultados.
+     Si quieres más separación entre ellas, sube este valor a 40px o 48px. */
+  gap: 42px; 
+  
+  align-items: start;
+}
+.contenedor-principal {
+    width: 95%;          /* Ocupa el 95% del ancho de la pantalla */
+    max-width: 1400px;   /* Permite que se expanda más en pantallas grandes (ej. de 1200px a 1400px) */
+    margin: 0 auto;      /* Mantiene el contenido centrado */
+    padding: 0 20px;     /* Un pequeño colchón para que no toque el borde exacto de la pantalla */
+}
+.seccion-dashboard {
+    width: 100vw;        /* Utiliza el 100% del ancho de la ventana gráfica */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+/* El contenedor de las dos columnas */
+.grid-dashboard {
+    display: flex;       /* o display: grid; */
+    gap: 24px;           /* Separación entre las dos tarjetas */
+    width: 100%;         
+    max-width: 100%;     /* Evita que se quede atrapado en un ancho fijo pequeño */
+}
+body {
+    margin: 0;           /* Elimina márgenes por defecto del navegador */
+    padding: 0 2%;       /* Deja solo un 2% de espacio a los lados */
+}
+.contenedor-principal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Junta los elementos hacia arriba en vez de separarlos */
+    gap: 40px;                   /* Controla el espacio exacto que quieres entre bloques */
+}
+
+/* Restablece el espacio superior del bloque de abajo */
+.arquitectura-seccion o h2 { /* Reemplaza por tu clase real */
+    margin-top: 20px !important; /* Reduce el espacio arriba del título */
+    padding-top: 20px !important;
+}
+
+/* Evita que los bloques de arriba empujen el contenido hacia abajo */
+.contenedor-superior-o-tarjeta { 
+    margin-bottom: 0px !important;
+    padding-bottom: 20px !important;
+}
+/* 1. Limpiar el contenedor principal */
+main, .tu-contenedor-principal { 
+    height: auto !important;         /* Quita alturas fijas que obliguen a estirarse */
+    min-height: 100vh;               /* Cubre el mínimo de la pantalla, pero permite crecer */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;     /* Alinea todo hacia arriba, pegadito */
+    gap: 30px;                       /* Controla la separación EXACTA entre bloques aquí */
+}
+
+/* 2. Resetear márgenes rebeldes de los títulos */
+h1, h2, h3, .titulo-seccion {
+    margin-top: 0 !important;        /* Evita que los títulos empujen hacia arriba */
+    margin-bottom: 15px;             /* Un espacio controlado hacia abajo */
+}
+
+/* 3. Asegurar que las secciones no empujen de más */
+section, .bloque-seccion {
+    margin-bottom: 0 !important;     /* El espacio ahora lo controla el 'gap' del punto 1 */
+}
+section, .seccion-contenedor {
+    height: auto !important;       /* ¡Clave! Elimina cualquier height fijo de 800px o 100vh */
+    min-height: auto !important;   /* Evita que se estire a la fuerza */
+    padding-top: 40px !important;  /* Un espacio sutil y controlado arriba */
+    padding-bottom: 40px !important;/* Un espacio sutil abajo */
+    margin-bottom: 0 !important;   /* Quitamos márgenes exteriores conflictivos */
+}
+
